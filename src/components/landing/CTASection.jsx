@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from 'lucide-react';
+import QuoteForm from './QuoteForm';
 
 export default function CTASection() {
+  const [formOpen, setFormOpen] = useState(false);
   return (
     <section id="contact" className="py-24 md:py-32 relative overflow-hidden">
       {/* Background */}
@@ -39,6 +41,7 @@ export default function CTASection() {
           >
             <Button 
               size="lg"
+              onClick={() => setFormOpen(true)}
               className="bg-[#ffd700] hover:bg-[#ffca28] text-[#0a0a0f] px-12 py-7 text-lg font-bold rounded-full transition-all duration-300 shadow-2xl shadow-[#ffd700]/30 hover:shadow-[#ffd700]/50 group"
             >
               GET A QUOTE
@@ -47,6 +50,8 @@ export default function CTASection() {
           </motion.div>
         </motion.div>
       </div>
+
+      <QuoteForm isOpen={formOpen} onClose={() => setFormOpen(false)} />
     </section>
   );
 }
