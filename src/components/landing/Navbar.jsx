@@ -55,11 +55,11 @@ export default function Navbar() {
                 </a>
               ))}
               <a 
-                href="tel:8888888888" 
+                href="tel:2403247044" 
                 className="flex items-center gap-2 text-[#00bcd4] font-medium text-sm"
               >
                 <Phone className="w-4 h-4" />
-                (888) 888-8888
+                (240) 324-7044
               </a>
             </div>
 
@@ -96,11 +96,11 @@ export default function Navbar() {
                 </a>
               ))}
               <a 
-                href="tel:8888888888" 
+                href="tel:2403247044" 
                 className="flex items-center gap-2 text-[#ffd700] font-medium text-lg mt-4"
               >
                 <Phone className="w-5 h-5" />
-                (888) 888-8888
+                (240) 324-7044
               </a>
             </div>
           </motion.div>
