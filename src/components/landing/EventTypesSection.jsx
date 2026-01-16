@@ -3,18 +3,18 @@ import { motion } from 'framer-motion';
 
 const eventTypes = [
   {
-    title: "WEDDINGS & SPECIAL EVENTS",
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
+    title: "WEEKLY WORSHIP SERVICES",
+    image: "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=800&q=80",
     gradient: "from-[#ffd700]/80 to-transparent"
   },
   {
-    title: "CORPORATE & TRADESHOWS",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+    title: "CONFERENCES & REVIVALS",
+    image: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=800&q=80",
     gradient: "from-[#00bcd4]/80 to-transparent"
   },
   {
-    title: "CONCERTS & FESTIVALS",
-    image: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&q=80",
+    title: "SPECIAL EVENTS & OUTREACH",
+    image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80",
     gradient: "from-[#1a237e]/80 to-transparent"
   }
 ];
@@ -31,10 +31,10 @@ export default function EventTypesSection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-sm font-semibold tracking-[0.3em] text-[#00bcd4] mb-4">
-            EVENTS WE PRODUCE
+            SERVING YOUR MINISTRY
           </h2>
           <h3 className="text-3xl md:text-5xl font-bold text-white">
-            YOUR EVENT, <span className="text-[#ffd700]">OUR EXPERTISE</span>
+            EVERY SERVICE, <span className="text-[#ffd700]">EVERY MOMENT</span>
           </h3>
         </motion.div>
 

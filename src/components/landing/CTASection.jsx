@@ -23,14 +23,14 @@ export default function CTASection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-sm font-semibold tracking-[0.3em] text-[#00bcd4] mb-4">
-            LET'S CREATE SOMETHING AMAZING
+            LET'S ELEVATE YOUR MINISTRY
           </h2>
           <h3 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            READY FOR YOUR
-            <span className="block text-[#ffd700]">NEXT EVENT?</span>
+            READY TO ENHANCE YOUR
+            <span className="block text-[#ffd700]">WORSHIP EXPERIENCE?</span>
           </h3>
           <p className="text-white/70 text-lg mb-10 max-w-xl mx-auto">
-            Let's discuss how T² Productions can transform your vision into an unforgettable experience.
+            Let's discuss how T² Productions can equip your church with the tools, training, and technology to reach more people.
           </p>
           
           <motion.div

@@ -14,7 +14,7 @@ export default function HeroSection() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1920&q=80')`
+          backgroundImage: `url('https://images.unsplash.com/photo-1507692049790-de58290a4334?w=1920&q=80')`
         }}
       />
       
@@ -71,9 +71,9 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            ELEVATE EVERY
+            EMPOWERING YOUR
             <span className="block bg-gradient-to-r from-[#00bcd4] to-[#ffd700] bg-clip-text text-transparent">
-              MOMENT
+              WORSHIP EXPERIENCE
             </span>
           </motion.h1>
 
@@ -83,8 +83,8 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            Premium audio, video, and lighting production that transforms 
-            your vision into an unforgettable experience.
+            Professional church production services, training, and integration solutions 
+            that elevate your ministry's message.
           </motion.p>
 
           <motion.div

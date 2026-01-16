@@ -6,32 +6,32 @@ const steps = [
   {
     icon: Phone,
     title: "CONTACT US",
-    description: "Reach out with details about your event"
+    description: "Share your church's production needs"
   },
   {
     icon: MessageSquare,
     title: "CONSULTATION",
-    description: "Let's discuss your vision together"
+    description: "We assess your current setup and goals"
   },
   {
     icon: FileText,
-    title: "GET A QUOTE",
-    description: "Receive a detailed proposal and timeline"
+    title: "GET A PROPOSAL",
+    description: "Receive a customized solution and quote"
   },
   {
     icon: Calendar,
-    title: "PLANNING",
-    description: "Walk through venue and finalize details"
+    title: "INSTALLATION",
+    description: "Professional setup and system integration"
   },
   {
     icon: Sparkles,
-    title: "VISION TO LIFE",
-    description: "We bring your event to the next level"
+    title: "TRAINING",
+    description: "Equip your team with hands-on skills"
   },
   {
     icon: PartyPopper,
-    title: "CELEBRATE",
-    description: "Enjoy your unforgettable event!"
+    title: "LAUNCH",
+    description: "Experience seamless worship production!"
   }
 ];
 

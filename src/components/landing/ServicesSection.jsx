@@ -1,25 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Volume2, Video, Lightbulb } from 'lucide-react';
+import { Volume2, Video, Lightbulb, Cog, GraduationCap, Settings2 } from 'lucide-react';
 import { Card } from "@/components/ui/card";
 
 const services = [
   {
     icon: Volume2,
     title: "AUDIO",
-    description: "Crystal-clear sound systems for concerts, special events, and live recordings. State-of-the-art equipment operated by industry professionals.",
+    description: "Professional sound systems designed for worship clarity. From sanctuary acoustics to multi-campus audio distribution and live streaming.",
     gradient: "from-[#00bcd4] to-[#1a237e]"
   },
   {
     icon: Video,
-    title: "VIDEO",
-    description: "Professional videography and live streaming services. Multi-camera setups, LED walls, and projection mapping to capture every moment.",
+    title: "VIDEO & PRESENTATION",
+    description: "Broadcast-quality video production, IMAG systems, and seamless presentation software integration for engaging worship experiences.",
     gradient: "from-[#1a237e] to-[#ffd700]"
   },
   {
     icon: Lightbulb,
-    title: "LIGHTING",
-    description: "Transformative lighting design and special effects. From elegant ambient lighting to dynamic concert shows and rigging solutions.",
+    title: "LIGHTING & NETWORKING",
+    description: "Dynamic worship lighting, stage design, and complete network infrastructure to connect all your production systems seamlessly.",
     gradient: "from-[#ffd700] to-[#00bcd4]"
   }
 ];
@@ -50,12 +50,12 @@ export default function ServicesSection() {
             QUALITY YOU CAN <span className="text-[#ffd700]">TRUST</span>
           </h3>
           <p className="mt-6 text-white/60 max-w-2xl mx-auto text-lg">
-            You have a story to tell and we're here to help. Our highly trained teams 
-            are passionate about delivering remarkable experiences.
+            Your message matters. We provide the technology, training, and support to ensure 
+            your congregation experiences worship without distraction.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
@@ -77,6 +77,47 @@ export default function ServicesSection() {
               </Card>
             </motion.div>
           ))}
+        </div>
+
+        {/* Additional Services */}
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
+            <Card className="bg-white/5 backdrop-blur-sm border-white/10 p-6 group hover:bg-white/10 transition-all duration-500 hover:border-[#ffd700]/50">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#00bcd4] to-[#ffd700] flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <Cog className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-white mb-2">AUTOMATION & INTEGRATION</h4>
+                  <p className="text-white/60 text-sm">Complete software and hardware automation solutions that streamline your production workflow and create consistent, repeatable results.</p>
+                </div>
+              </div>
+            </Card>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.7 }}
+          >
+            <Card className="bg-white/5 backdrop-blur-sm border-white/10 p-6 group hover:bg-white/10 transition-all duration-500 hover:border-[#ffd700]/50">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#ffd700] to-[#00bcd4] flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <GraduationCap className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-white mb-2">TEAM TRAINING</h4>
+                  <p className="text-white/60 text-sm">Comprehensive training programs that equip your volunteers and staff with the skills and confidence to run professional-quality services.</p>
+                </div>
+              </div>
+            </Card>
+          </motion.div>
         </div>
       </div>
     </section>

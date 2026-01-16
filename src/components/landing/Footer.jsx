@@ -22,8 +22,8 @@ export default function Footer() {
               <span className="text-white/80 ml-2 text-lg tracking-wider">PRODUCTIONS</span>
             </div>
             <p className="text-white/50 text-sm leading-relaxed">
-              Premium audio, video, and lighting production services. 
-              We elevate every moment and bring your vision to life.
+              Specialized church production services, integration solutions, and team training. 
+              Empowering ministries to deliver exceptional worship experiences.
             </p>
           </motion.div>
 
