@@ -83,12 +83,12 @@ export default function QuoteForm({ isOpen, onClose }) {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Thank You!</h3>
-              <p className="text-white/70">We've received your quote request and will be in touch soon.</p>
+              <p className="text-white/70">We've received your consultation request and will be in touch soon.</p>
             </motion.div>
           ) : (
             <>
               <div className="mb-8">
-                <h2 className="text-3xl font-bold text-white mb-2">Get A Quote</h2>
+                <h2 className="text-3xl font-bold text-white mb-2">Schedule Consultation</h2>
                 <p className="text-white/60">Tell us about your ministry and how we can help</p>
               </div>
 
@@ -221,7 +221,7 @@ export default function QuoteForm({ isOpen, onClose }) {
                   disabled={isSubmitting}
                   className="w-full bg-[#00bcd4] hover:bg-[#00acc1] text-white py-6 text-lg font-bold rounded-lg transition-all duration-300"
                 >
-                  {isSubmitting ? 'Submitting...' : 'Submit Quote Request'}
+                  {isSubmitting ? 'Submitting...' : 'Request Consultation'}
                 </Button>
               </form>
             </>

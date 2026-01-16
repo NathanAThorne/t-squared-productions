@@ -44,7 +44,7 @@ export default function CTASection() {
               onClick={() => setFormOpen(true)}
               className="bg-[#ffd700] hover:bg-[#ffca28] text-[#0a0a0f] px-12 py-7 text-lg font-bold rounded-full transition-all duration-300 shadow-2xl shadow-[#ffd700]/30 hover:shadow-[#ffd700]/50 group"
             >
-              GET A QUOTE
+              SCHEDULE CONSULTATION
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </motion.div>

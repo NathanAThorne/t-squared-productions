@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin, Instagram, Facebook, Linkedin, Youtube } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -65,22 +65,9 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 text-white/50 text-sm">
                 <MapPin className="w-4 h-4 text-[#00bcd4]" />
-                Los Angeles, CA
+                Upper Marlboro, MD
               </li>
             </ul>
-
-            {/* Social Icons */}
-            <div className="flex gap-4 mt-6">
-              {[Instagram, Facebook, Linkedin, Youtube].map((Icon, i) => (
-                <a 
-                  key={i}
-                  href="#" 
-                  className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00bcd4]/20 hover:border-[#00bcd4] transition-all duration-300"
-                >
-                  <Icon className="w-4 h-4 text-white/60 hover:text-white" />
-                </a>
-              ))}
-            </div>
           </motion.div>
         </div>
 
