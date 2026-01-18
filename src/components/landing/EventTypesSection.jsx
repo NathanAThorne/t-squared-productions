@@ -21,7 +21,7 @@ const eventTypes = [
 
 export default function EventTypesSection() {
   return (
-    <section className="py-24 md:py-32 bg-[#0a0a0f]">
+    <section id="events" className="py-24 md:py-32 bg-[#0a0a0f]">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div 
           className="text-center mb-16"
