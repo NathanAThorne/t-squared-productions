@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X, Calendar } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import QuoteForm from './QuoteForm';
 
 const navLinks = [
   { name: 'Services', href: '#services' },
-  { name: 'Events', href: '#events' },
-  { name: 'About', href: '#about' },
-  { name: 'Contact', href: '#contact' }
+  { name: 'Events', href: '#services' },
+  { name: 'About', href: '#about' }
 ];
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [formOpen, setFormOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,14 +55,14 @@ export default function Navbar() {
                   {link.name}
                 </a>
               ))}
-              <a 
-                href="tel:2403247044" 
-                className="flex items-center gap-2 text-[#00bcd4] font-medium text-sm"
+              <button 
+                onClick={() => setFormOpen(true)}
+                className="flex items-center gap-2 text-[#00bcd4] font-medium text-sm hover:text-[#00acc1] transition-colors"
               >
-                <Phone className="w-4 h-4" />
-                (240) 324-7044
-              </a>
-            </div>
+                <Calendar className="w-4 h-4" />
+                Schedule Consultation
+              </button>
+              </div>
 
             {/* Mobile Menu Button */}
             <button
@@ -93,19 +94,24 @@ export default function Navbar() {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.name}
-                </a>
-              ))}
-              <a 
-                href="tel:2403247044" 
-                className="flex items-center gap-2 text-[#ffd700] font-medium text-lg mt-4"
-              >
-                <Phone className="w-5 h-5" />
-                (240) 324-7044
-              </a>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </>
-  );
-}
+                  </a>
+                  ))}
+                  <button 
+                  onClick={() => {
+                  setMobileMenuOpen(false);
+                  setFormOpen(true);
+                  }}
+                  className="flex items-center gap-2 text-[#ffd700] font-medium text-lg mt-4"
+                  >
+                  <Calendar className="w-5 h-5" />
+                  Schedule Consultation
+                  </button>
+                  </div>
+                  </motion.div>
+                  )}
+                  </AnimatePresence>
+
+                  <QuoteForm isOpen={formOpen} onClose={() => setFormOpen(false)} />
+                  </>
+                  );
+                  }

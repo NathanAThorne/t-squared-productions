@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Calendar, MapPin } from 'lucide-react';
+import QuoteForm from './QuoteForm';
 
 export default function Footer() {
+  const [formOpen, setFormOpen] = useState(false);
+  
   return (
     <footer className="bg-[#050508] py-16 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6">
@@ -36,9 +39,9 @@ export default function Footer() {
           >
             <h4 className="text-white font-semibold mb-6 tracking-wide">QUICK LINKS</h4>
             <ul className="space-y-3">
-              {['Services', 'Events', 'About Us', 'Contact'].map((link) => (
+              {['Services', 'Events', 'About Us'].map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-white/50 hover:text-[#00bcd4] transition-colors text-sm">
+                  <a href="#services" className="text-white/50 hover:text-[#00bcd4] transition-colors text-sm">
                     {link}
                   </a>
                 </li>
@@ -55,13 +58,14 @@ export default function Footer() {
           >
             <h4 className="text-white font-semibold mb-6 tracking-wide">CONTACT US</h4>
             <ul className="space-y-4">
-              <li className="flex items-center gap-3 text-white/50 text-sm">
-                <Phone className="w-4 h-4 text-[#00bcd4]" />
-                (240) 324-7044
-              </li>
-              <li className="flex items-center gap-3 text-white/50 text-sm">
-                <Mail className="w-4 h-4 text-[#00bcd4]" />
-                info@t2productions.com
+              <li>
+                <button 
+                  onClick={() => setFormOpen(true)}
+                  className="flex items-center gap-3 text-white/50 hover:text-[#00bcd4] transition-colors text-sm"
+                >
+                  <Calendar className="w-4 h-4 text-[#00bcd4]" />
+                  Schedule Consultation
+                </button>
               </li>
               <li className="flex items-center gap-3 text-white/50 text-sm">
                 <MapPin className="w-4 h-4 text-[#00bcd4]" />
@@ -77,7 +81,9 @@ export default function Footer() {
             © {new Date().getFullYear()} T² Productions. All Rights Reserved.
           </p>
         </div>
-      </div>
-    </footer>
-  );
-}
+        </div>
+
+        <QuoteForm isOpen={formOpen} onClose={() => setFormOpen(false)} />
+        </footer>
+        );
+        }
