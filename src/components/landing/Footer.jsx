@@ -39,13 +39,21 @@ export default function Footer() {
           >
             <h4 className="text-white font-semibold mb-6 tracking-wide">QUICK LINKS</h4>
             <ul className="space-y-3">
-              {['Services', 'Events', 'About Us'].map((link) => (
-                <li key={link}>
-                  <a href="#services" className="text-white/50 hover:text-[#00bcd4] transition-colors text-sm">
-                    {link}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a href="#services" className="text-white/50 hover:text-[#00bcd4] transition-colors text-sm">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#events" className="text-white/50 hover:text-[#00bcd4] transition-colors text-sm">
+                  Events
+                </a>
+              </li>
+              <li>
+                <a href="#about" className="text-white/50 hover:text-[#00bcd4] transition-colors text-sm">
+                  About Us
+                </a>
+              </li>
             </ul>
           </motion.div>
 

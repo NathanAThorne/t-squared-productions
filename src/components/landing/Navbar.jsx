@@ -6,7 +6,7 @@ import QuoteForm from './QuoteForm';
 
 const navLinks = [
   { name: 'Services', href: '#services' },
-  { name: 'Events', href: '#services' },
+  { name: 'Events', href: '#events' },
   { name: 'About', href: '#about' }
 ];
 
