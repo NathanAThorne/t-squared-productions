@@ -1,6 +1,6 @@
 {
-  "name": "base44-app",
-  "private": true,
+  "name": "tsquaredproductions",
+  "homepage": "https://NathanAThorne.github.io/t-squared-productions/"
   "version": "0.0.0",
   "type": "module",
   "scripts": {
