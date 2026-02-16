@@ -2,9 +2,15 @@ import base44 from "@base44/vite-plugin"
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
+// vite.config.js
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/t-squared-productions"
+  plugins: [react()],
+  base: "/t-squared-productions",   // ← important! Include the trailing slash
     logLevel: 'error', // Suppress warnings, only show errors
   plugins: [
     base44({
